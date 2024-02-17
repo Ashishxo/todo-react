@@ -26,11 +26,11 @@ function Todos(){
                         <div className="px-1 flex gap-3">
 
                             <button className="w-9 rounded-lg bg-white p-[6px] hover:bg-[#cfcfcf]" onClick={(e)=> {e.preventDefault();  return(dispatch(toggleEdit(todo.id)))}}>
-                                <img className="" src={`${todo.isEditable ? `./src/assets/folder.png` : `./src/assets/pencil.png`}`}   />
+                                <img className="" src={`${todo.isEditable ? `https://cdn-icons-png.flaticon.com/512/3767/3767084.png` : `https://cdn-icons-png.flaticon.com/512/200/200389.png`}`}   />
                             </button>  
 
                             <button className="w-9 rounded-lg bg-white p-[6px] hover:bg-[#cfcfcf]" onClick={() => dispatch(removeTodo(todo.id))}>
-                                <img className="" src="./src/assets/delete.png"  />
+                                <img className="" src="https://www.svgrepo.com/show/502608/delete-2.svg"  />
                             </button>  
 
                         </div>
