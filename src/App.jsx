@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <h2 className='text-center font-["roboto"] font-bold text-[#5e5e5e] text-5xl my-12'>ToDo List</h2>
+      <h2 className='text-center font-["roboto"] font-bold text-[#444] text-5xl my-12'>ToDo List</h2>
       <TodoForm/>
       <hr />
       <Todos/>
