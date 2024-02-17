@@ -16,11 +16,11 @@ function TodoForm(){
     }
 
     return(
-        <form onSubmit={addTodoHandler}>
+        <form onSubmit={addTodoHandler} >
             <input type="text" name="" id=""  className="rounded-l-3xl py-4 px-5 w-5/6 my-8 outline-none bg-[#efefef]" value={input}
             onChange={(e)=> setInput(e.target.value)}/>
 
-            <button className="w-1/6 bg-indigo-400 py-4 rounded-r-3xl text-white font-['Quicksand'] font-bold" type="submit">Add
+            <button className="w-1/6 bg-indigo-400 pt-[17px] pb-[15px] rounded-r-3xl text-white font-['Quicksand'] font-bold" type="submit">Add
             </button>
         </form>
     )

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { removeTodo } from "../features/todo/todoSlice";
+import { removeTodo, toggleTodo } from "../features/todo/todoSlice";
 
 function Todos(){
-    const todos = useSelector((state) => state.todos)
+    
 
+    const todos = useSelector((state) => state.todos)
     const dispatch = useDispatch()
 
     
@@ -17,7 +18,8 @@ function Todos(){
 
                   
                   <div className="flex gap-6 items-center ml-3">
-                      <h2 className="inline-block font-['Quicksand'] text-lg">{todo.text}</h2>
+                      <input type="checkbox" name="" id="" className="size-4" value={todo.completed} onChange={() => dispatch(toggleTodo(todo.id))}/>
+                      <h2 className={`font-['Quicksand'] text-xl ${todo.completed ? `line-through` : ``}`}>{todo.text}</h2>
                   </div>
 
                   <div className="px-1">
