@@ -14,7 +14,7 @@ function Todos(){
             <div className="flex flex-col items-center gap-2">
           
               {todos.map((todo) =>(
-                <form key={todo.id} className="bg-[#efefef] w-5/6 flex mt-2 py-4 px-3 rounded-3xl justify-between">
+                <form key={todo.id} className="bg-[#efefef] w-5/6 flex mt-4 py-4 px-3 rounded-3xl justify-between">
 
                     
                         <div className="flex gap-6 items-center ml-3 w-full">

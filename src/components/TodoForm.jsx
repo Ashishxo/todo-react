@@ -3,7 +3,7 @@ import { addTodo } from "../features/todo/todoSlice";
 import { useDispatch } from "react-redux";
 
 function TodoForm(){
-    const [input, setInput] = useState('')
+    const [input, setInput] = useState()
     const dispatch = useDispatch();
 
     function addTodoHandler(e){
@@ -17,7 +17,7 @@ function TodoForm(){
 
     return(
         <form onSubmit={addTodoHandler} >
-            <input type="text" name="" id=""  className="rounded-l-3xl py-4 px-5 w-5/6 my-8 outline-none bg-[#efefef]" value={input}
+            <input type="text" name="" id="" placeholder="Enter Your Todo..." className="rounded-l-3xl py-4 px-5 w-5/6 my-8 outline-none bg-[#efefef]" value={input}
             onChange={(e)=> setInput(e.target.value)}/>
 
             <button className="w-1/6 bg-indigo-400 pt-[17px] pb-[15px] rounded-r-3xl text-white font-['Quicksand'] font-bold" type="submit">Add
