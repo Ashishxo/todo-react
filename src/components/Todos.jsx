@@ -20,7 +20,7 @@ function Todos(){
                         <div className="flex gap-6 items-center ml-3 w-full">
                             <input type="checkbox" name="" id="" className="size-4" value={todo.completed} onChange={() => dispatch(toggleTodo(todo.id))}/>
                             
-                            <input type="text" value={todo.text} onChange={(e) => dispatch(updateTodo({id: todo.id, text: e.target.value}))} disabled={!todo.isEditable} className={`w-full block font-['Quicksand'] rounded-lg text-xs text-ellipsis px-2 md:text-xl ${todo.completed ? `line-through` : ``} bg-inherit ${todo.isEditable ? `border-solid border-2 border-gray-500`:``} ${todo.id}`}/>
+                            <input type="text" value={todo.text} onChange={(e) => dispatch(updateTodo({id: todo.id, text: e.target.value}))} disabled={!todo.isEditable} className={`w-full block font-['Quicksand'] rounded-lg text-sm text-ellipsis px-2 md:text-xl ${todo.completed ? `line-through` : ``} bg-inherit ${todo.isEditable ? `border-solid border-2 border-gray-500`:``} ${todo.id}`}/>
                         </div>
 
                         <div className="px-1 flex gap-3">
